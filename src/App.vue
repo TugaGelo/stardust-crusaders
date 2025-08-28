@@ -49,7 +49,6 @@ const { nextCard, previousCard } = standStore;
 </template>
 
 <style>
-/* The CSS remains exactly the same as the previous step */
 :root {
   --card-width: 150px;
   --card-height: 250px;
@@ -78,7 +77,6 @@ main {
   gap: 2rem;
 }
 
-/* Info Box Styling */
 .info-box {
   width: 700px;
   min-height: 220px;
@@ -87,7 +85,6 @@ main {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  /* Always visible now, no transition needed on opacity */
   backdrop-filter: blur(5px);
   position: relative;
   z-index: 200;
@@ -113,7 +110,6 @@ main {
 .info-box ul { list-style: none; padding: 0; font-size: 0.9em; }
 .info-box li { padding: 2px 0; }
 
-/* Carousel Styling */
 .carousel-container {
   display: flex;
   align-items: center;

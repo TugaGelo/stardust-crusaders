@@ -248,13 +248,10 @@ export const useStandStore = defineStore('stands', {
       },
     ] as Stand[],
 
-    // NEW STATE for the carousel
-    activeIndex: 17, // Start with Star Platinum (index 17)
+    activeIndex: 17, 
   }),
 
-  // NEW GETTERS for the carousel
   getters: {
-    // This getter provides the 7 cards for the visual carousel display.
     visibleCards(state): Stand[] {
       const visibleCount = 7;
       const half = Math.floor(visibleCount / 2);
@@ -272,14 +269,12 @@ export const useStandStore = defineStore('stands', {
       return visible;
     },
 
-    // NEW: This getter gives us the single, currently active stand object.
     activeCard(state): Stand {
       return state.stands[state.activeIndex];
     },
   },
 
   actions: {
-    // The 'setHoveredStand' action is no longer needed.
     nextCard() {
       this.activeIndex = (this.activeIndex + 1) % this.stands.length;
     },
