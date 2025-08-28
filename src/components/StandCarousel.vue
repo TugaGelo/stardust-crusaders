@@ -18,7 +18,6 @@ const { nextCard, previousCard } = standStore;
         v-for="(stand, index) in visibleCards"
         :key="stand.id"
         :stand="stand"
-        :index="index"
         :is-active="index === 3"
       />
     </div>

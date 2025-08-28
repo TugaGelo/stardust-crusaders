@@ -3,7 +3,6 @@ import type { Stand } from '@/types';
 
 defineProps<{
   stand: Stand;
-  index: number;
   isActive: boolean;
 }>();
 </script>
