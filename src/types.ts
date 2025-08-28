@@ -3,8 +3,8 @@ export interface Stand {
   name: string;
   user: string;
   tarotCard: string;
-  tarotCardImageUrl: string; // <-- RENAMED from imageUrl
-  standImageUrl: string;     // <-- ADD THIS LINE
+  tarotCardImageUrl: string;
+  standImageUrl: string;
   userImageUrl: string;
   abilities: string[];
 }
